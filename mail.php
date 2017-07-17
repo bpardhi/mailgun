@@ -46,7 +46,7 @@
                             click %unsubscribe_url%',
               'campaigns-id'=>$cid,
               'campaigns-name' =>$cname,
-              'o:tag' => 'remainder1',
+              'o:tag' => $cname,
               'recipient-variables' =>$x
             ));
         }
@@ -96,7 +96,7 @@
               If you wish to unsubscribe,click http://mailgun/unsubscribe/%recipient.id%',
               'o:campaign-id'=>$cid,
               'o:compaign-name' =>$cname,
-              'o:tag' => 'remainder1',
+              'o:tag' => $cname,
               'recipient-variables' =>$x
             ));
         }
